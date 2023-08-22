@@ -1,2 +1,16 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import { Title, TextInput , PasswordInput } from '@svelteuidev/core';
+</script>
+
+<Title class="mb-10">Login page</Title>
+
+<TextInput
+  placeholder="Your name"
+  label="Full name"
+  class="mb-3"
+/>
+
+<PasswordInput
+  placeholder="Your password"
+  label="Password"
+/>
