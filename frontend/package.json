@@ -10,25 +10,25 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.20.4",
+		"@sveltejs/adapter-auto": "^2.1.0",
+		"@sveltejs/kit": "^1.23.0",
 		"autoprefixer": "^10.4.15",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte": "^2.30.0",
+		"eslint": "^8.47.0",
+		"eslint-config-prettier": "^8.10.0",
+		"eslint-plugin-svelte": "^2.33.0",
 		"postcss": "^8.4.28",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",
 		"prettier-plugin-tailwindcss": "^0.5.3",
-		"svelte": "^4.0.5",
+		"svelte": "^4.2.0",
 		"tailwindcss": "^3.3.3",
-		"vite": "^4.4.2"
+		"vite": "^4.4.9"
 	},
 	"type": "module",
 	"dependencies": {
-		"@svelteuidev/composables": "^0.15.1",
-		"@svelteuidev/core": "^0.15.1",
-		"@svelteuidev/preprocessors": "^0.15.1",
+		"@svelteuidev/composables": "^0.15.2",
+		"@svelteuidev/core": "^0.15.2",
+		"@svelteuidev/preprocessors": "^0.15.2",
 		"radix-icons-svelte": "^1.2.1"
 	}
 }

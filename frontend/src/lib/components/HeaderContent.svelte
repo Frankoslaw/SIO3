@@ -1,5 +1,5 @@
 <script>
-	// @ts-nocheck
+	import LoginModal from './LoginModal.svelte';
 
 	import { colorScheme, Button, Group, Flex, NativeSelect } from '@svelteuidev/core';
 	import {
@@ -11,7 +11,11 @@
 	function toggleTheme() {
 		colorScheme.update((v) => (v === 'light' ? 'dark' : 'light'));
 	}
+
+	let opened = false;
 </script>
+
+<LoginModal bind:opened />
 
 <Flex justify="space-between">
 	<Group>
@@ -21,8 +25,8 @@
 				SIO3
 			</Button>
 		</a>
-		<NativeSelect data={['OI', 'OIJ', 'TEST']}
-			placeholder="Contest"
+		<NativeSelect data={['Switch Contest', 'Problemset']}
+			placeholder="BOI2020 - trening"
 			radius="md"
 			size="md"
 			required={false}
@@ -30,7 +34,7 @@
 	</Group>
 
 	<Group>
-		<Button variant="subtle" size="lg" color="teal">
+		<Button on:click={() => (opened = true)} variant="subtle" size="lg" color="teal">
 			<Person slot="leftIcon" />
 			Login
 		</Button>
