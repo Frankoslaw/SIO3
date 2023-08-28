@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:alpine
+    restart: always
+    environment:
+      POSTGRES_USER: frankoslaw
+      POSTGRES_PASSWORD: Lolalola453
+      POSTGRES_DB: sio3_db
+    ports:
+      - "5432:5432"
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: franopusz2006@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: Lolalola453
+    ports:
+      - "5050:80"

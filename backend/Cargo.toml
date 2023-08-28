@@ -2,11 +2,37 @@
 name = "backend"
 version = "0.1.0"
 edition = "2021"
+build = "build.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-actix-web = { version="4.3.1", features=["rustls"] }
-sqlx = { version="0.7.1", features=["postgres", "runtime-tokio-rustls"] }
-tokio = { version="1.32.0", features=["full"] }
-exers = { version="0.2.0", default-features=false, features=["cpp", "native"] }
+dotenv = "0.15.0"
+tracing = "0.1.23"
+tracing-subscriber = "0.3.17"
+thiserror = "1.0.47"
+
+actix-web = "4.3.1"
+jsonwebtoken = "8.3.0"
+rhai = "1.15.1"
+serde = "1.0.188"
+async-trait = "0.1.73"
+
+[dev-dependencies]
+mockall = "0.11.4"
+
+[dependencies.tokio]
+version = "1.31.0"
+features = ["macros", "signal", "rt-multi-thread"]
+
+[dependencies.sqlx]
+version = "0.7.1"
+features = [ "runtime-tokio", "tls-rustls", "sqlite", "postgres", "macros", "migrate" ]
+
+[dependencies.exers]
+version = "0.2.0"
+default-features=false
+features=["cpp", "native"]
+
+[profile.dev.package.sqlx-macros]
+opt-level = 3

@@ -1,0 +1,23 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "SIO3",
+    "dateExported": "2023-08-28T17:27:40.922Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a34e2f0f-c6e6-4556-8eb9-793220b1b5f2",
+            "colId": "52a18748-0f6b-4b6a-8da6-b36d37fa6303",
+            "containerId": "",
+            "name": "Get news by competition_id",
+            "url": "http://localhost:8080/c/1/news",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-28T17:27:35.822Z",
+            "modified": "2023-08-28T17:27:35.822Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
